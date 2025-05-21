@@ -1,4 +1,3 @@
-
 // // alert("Hello world!");
 
 // let js = "amazing";
@@ -12,7 +11,7 @@
 
 // let firstName = "jonas";
 // // let first = 'jonas';
-// // let firstNamePerson 
+// // let firstNamePerson
 // // let first_name_person
 // console.log(firstName);
 
@@ -32,7 +31,6 @@
 
 // console.log(myFirstJob);
 
-
 //? Data Types
 
 // let javascript = true;
@@ -49,12 +47,10 @@
 
 // console.log(typeof null);
 
-
 //? Variables(let,var and const)
 
 // let age = 30;
 // age = 31;
-
 
 // const birthYear = 1995;
 // // birthYear = 1992;
@@ -66,7 +62,6 @@
 // lastName = "badman";
 
 // console.log(lastName);
-
 
 //? Basic operators
 
@@ -98,10 +93,9 @@
 // console.log(ageJones < ageRoshani);//>,<,>=,<=
 // console.log(ageJones <= 18);
 
-// const isFullAge = ageJones <= 18;   
+// const isFullAge = ageJones <= 18;
 
 // console.log(now - 1991 > now - 2020);
-
 
 // const now = 2038;
 // const ageJones = now - 1991;
@@ -110,15 +104,13 @@
 // console.log(now - 1991 > now - 2018);
 
 // let x,y;
-// x = y = 25 - 10 - 5;// x = y = 10, x = 10 
+// x = y = 25 - 10 - 5;// x = y = 10, x = 10
 // console.log(x,y);
 
 // const averageAge = ageJones + ageRoshani /  2;
 // console.log(ageJones,ageRoshani,averageAge);
 
-
 //? string and template literals
-
 
 // const firstName = 'janu';
 // const job = 'developer';
@@ -137,10 +129,9 @@
 //     multiple \n\
 //     lines');
 
-// console.log(`string 
+// console.log(`string
 //     muktiple
 //     lines`);
-
 
 //? Talking decisions: if/else statements
 
@@ -166,3 +157,27 @@
 //      century = 21;
 // }
 // console.log(century);
+
+//? Type conversion and coercion
+
+// const inputYear = '2006';
+// console.log(Number(inputYear),inputYear);
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number('janu'));
+// console.log(typeof NaN);
+
+// console.log(String(23));
+
+//? type coercion
+
+console.log('I am ' + 19 + ' years old');
+console.log('I am ' + String(19) + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' + '10' + 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+let n = '1' + 1;   //11
+n = n - 1;
+console.log(n);
