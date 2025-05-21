@@ -211,9 +211,9 @@
 
 //? Equality operators : == vs ===
 
-const age = 18;
-if (age === 18) console.log("You just become an adult:D(strict)");
-if (age == 18) console.log("You just become an adult:D(loose)");
+// const age = 18;
+// if (age === 18) console.log("You just become an adult:D(strict)");
+// if (age == 18) console.log("You just become an adult:D(loose)");
 
 
 //const favourite = prompt("What's your favourite number?");
@@ -221,15 +221,34 @@ if (age == 18) console.log("You just become an adult:D(loose)");
 //console.log(typeof favourite);//string(23 type string ma ave)
 
 
-let favourite =Number('23');
-if (favourite === 23) { // '23' === 23 (type not same)
-    console.log("cool! 23 is a amazing number!");
-}else if(favourite === 7){
-    console.log('7 is also a cool number');
-}else if(favourite === 9){
-    console.log('9 is also a cool number');
-}else{
-    console.log('Number is not 23 or 7 or 9');
-}
+// let favourite =Number('23');
+// if (favourite === 23) { // '23' === 23 (type not same)
+//     console.log("cool! 23 is a amazing number!");
+// }else if(favourite === 7){
+//     console.log('7 is also a cool number');
+// }else if(favourite === 9){
+//     console.log('9 is also a cool number');
+// }else{
+//     console.log('Number is not 23 or 7 or 9');
+// }
 
-if(favourite !== 23) console.log('Why not 23?');
+// if(favourite !== 23) console.log('Why not 23?');
+
+
+//? Boolean Logic (and,or,not operators)
+
+// and mate
+//true + true = true
+//false + true = false
+//true + false = false
+//false + false = false
+
+//or mate
+//true + true = true
+//false + true = true
+//true + false = true
+//false + false = false
+
+//not mate
+// Inverts true/false value
+//false to true & true to false
