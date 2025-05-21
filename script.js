@@ -194,16 +194,42 @@
 // console.log(Boolean({}));
 // console.log(Boolean(''));
 
-const money = 0;
-if (money) {
-    console.log("Don't spend it all;");
+// const money = 0;
+// if (money) {
+//     console.log("Don't spend it all;");
+// }else{
+//     console.log("You should get a job!");   
+// }
+
+// let height;
+// if (height) {
+//     console.log('YAY! Height is defined');
+// }else{
+//     console.log('Height is not define');
+// }
+
+
+//? Equality operators : == vs ===
+
+const age = 18;
+if (age === 18) console.log("You just become an adult:D(strict)");
+if (age == 18) console.log("You just become an adult:D(loose)");
+
+
+//const favourite = prompt("What's your favourite number?");
+//console.log(favourite);//je nakho field ma e j
+//console.log(typeof favourite);//string(23 type string ma ave)
+
+
+let favourite =Number('23');
+if (favourite === 23) { // '23' === 23 (type not same)
+    console.log("cool! 23 is a amazing number!");
+}else if(favourite === 7){
+    console.log('7 is also a cool number');
+}else if(favourite === 9){
+    console.log('9 is also a cool number');
 }else{
-    console.log("You should get a job!");   
+    console.log('Number is not 23 or 7 or 9');
 }
 
-let height;
-if (height) {
-    console.log('YAY! Height is defined');
-}else{
-    console.log('Height is not define');
-}
+if(favourite !== 23) console.log('Why not 23?');
