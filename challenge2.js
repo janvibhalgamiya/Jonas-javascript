@@ -6,3 +6,31 @@
 // 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
 // BMI (28.3) is higher than John's (23.9)!"
 // Hint: Use an if/else statement �
+
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / heightJohn ** 2;
+
+// console.log(BMIMark,BMIJohn);
+
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(markHigherBMI);
+
+const johnHigherBMI = BMIJohn > BMIMark;
+console.log(johnHigherBMI);
+
+if (markHigherBMI > johnHigherBMI) {
+    console.log("Mark's BMI is higher than John's!"); 
+}else{
+    console.log("John's BMI is higher than Mark's!");
+}
+
+if (markHigherBMI > johnHigherBMI) {
+    console.log(`Mrk's BMI ${BMIMark} is higher than john's BMI ${BMIJohn}`);
+}
