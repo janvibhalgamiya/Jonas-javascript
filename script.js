@@ -312,22 +312,42 @@
 
 //? challenge in video
 
-const day = 'Sunday';
+// const day = 'Sunday';
 
  
-if (day === 'Monday') {
-    console.log('Plan  course structure & Go to Coding practice');
-}else if(day ==='Tuesday'){
-    console.log('Prepare theory videos');
-}else if(day === 'Wednesday'){
-    console.log('Write code examples');
-}else if(day === 'Thusday'){
-    console.log('Go to Coding practice');
-}else if(day === 'Friday'){
-    console.log('Records Videos');
-}else if(day === 'Saturday' || day === 'Sunday'){
-    console.log('Enjoy the Weekend');
+// if (day === 'Monday') {
+//     console.log('Plan  course structure & Go to Coding practice');
+// }else if(day ==='Tuesday'){
+//     console.log('Prepare theory videos');
+// }else if(day === 'Wednesday'){
+//     console.log('Write code examples');
+// }else if(day === 'Thusday'){
+//     console.log('Go to Coding practice');
+// }else if(day === 'Friday'){
+//     console.log('Records Videos');
+// }else if(day === 'Saturday' || day === 'Sunday'){
+//     console.log('Enjoy the Weekend');
+// }else{
+//     console.log('Not a Valid Day!');
+// }
+
+
+//? The conditional(Ternary) operator
+
+const age = 19;
+//age >= 18 ? console.log('I Like to Drink Wine') : console.log('I Like to Drink Water');
+
+const drink = age >= 18 ? 'Wine' : 'Water';
+console.log(drink);
+
+
+let drink2;
+if(age >= 18){
+    drink2 = 'Wine🍷';
 }else{
-    console.log('Not a Valid Day!');
+    drink2 = 'Water💧';
 }
+console.log(drink2);
+
+console.log(`I Like to Drink ${age >= 18 ? 'Wine' : 'Water'}`);
 
