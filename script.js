@@ -256,27 +256,27 @@
 
 //? Logical operators(&&,||,!)
 
-const hasDriversLicence = true; //A
-const hasGoodVision = true; //B
+// const hasDriversLicence = true; //A
+// const hasGoodVision = true; //B
 
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-console.log(!hasDriversLicence);
+// console.log(hasDriversLicence && hasGoodVision);
+// console.log(hasDriversLicence || hasGoodVision);
+// console.log(!hasDriversLicence);
 
 // const shouldDrive = hasDriversLicence && hasGoodVision;
 
-if (hasDriversLicence && hasGoodVision) {
-    console.log('Sarah is able to drive!');     
-}else{
-    console.log('Someone else should Drive...');
-}
+// if (hasDriversLicence && hasGoodVision) {
+//     console.log('Sarah is able to drive!');     
+// }else{
+//     console.log('Someone else should Drive...');
+// }
 
-const isTired = true; //C
-console.log(hasDriversLicence || hasGoodVision || isTired);
-console.log(hasDriversLicence && hasGoodVision && isTired);
+// const isTired = true; //C
+// console.log(hasDriversLicence || hasGoodVision || isTired);
+// console.log(hasDriversLicence && hasGoodVision && isTired);
 
-if (hasDriversLicence && hasGoodVision && !isTired) {
-    console.log('Sarah is able to drive');
-}else{
-    console.log('Someone else should Drive...');
-}
+// if (hasDriversLicence && hasGoodVision && !isTired) {
+//     console.log('Sarah is able to drive');
+// }else{
+//     console.log('Someone else should Drive...');
+// }
