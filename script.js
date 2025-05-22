@@ -280,3 +280,54 @@
 // }else{
 //     console.log('Someone else should Drive...');
 // }
+
+
+//? The Switch Statement
+
+// const day = 'SunDay';
+
+// switch (day) {
+//     case  'MonDay': // day = monday
+//         console.log('Plan  course structure');
+//         console.log('Go to Coding practice');
+//         break;
+//     case 'TuesDay':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'WednesDay':
+//     case 'ThusDay':
+//         console.log('Write code examples');
+//         break;
+//     case 'FriDay':
+//         console.log('Records Videos');
+//         break;
+//     case 'SaturDay':
+//     case 'SunDay':
+//         console.log('Enjoy the Weekend');
+//         break;  
+//     default:
+//         console.log('Not a Valid Day!');
+//         break;
+// }
+
+//? challenge in video
+
+const day = 'Sunday';
+
+ 
+if (day === 'Monday') {
+    console.log('Plan  course structure & Go to Coding practice');
+}else if(day ==='Tuesday'){
+    console.log('Prepare theory videos');
+}else if(day === 'Wednesday'){
+    console.log('Write code examples');
+}else if(day === 'Thusday'){
+    console.log('Go to Coding practice');
+}else if(day === 'Friday'){
+    console.log('Records Videos');
+}else if(day === 'Saturday' || day === 'Sunday'){
+    console.log('Enjoy the Weekend');
+}else{
+    console.log('Not a Valid Day!');
+}
+
