@@ -38,3 +38,22 @@
 
 // const appleOrangeJuice = fruitProcessor(2,4);
 // console.log(appleOrangeJuice);
+
+
+//? Functions Declarations vs Expressions
+
+//* Function declaration
+function calcAge1(birthYeah){
+    return   2037 - birthYeah;
+}
+
+const age1 = calcAge1(2022);
+console.log(age1);
+
+//* Function Expression
+const calcAge2 = function (birthYeah){
+    return 2037 - birthYeah;
+}
+
+const age2 = calcAge2(2022);
+console.log(age1,age2);
