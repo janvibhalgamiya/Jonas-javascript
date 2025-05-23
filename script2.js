@@ -43,17 +43,36 @@
 //? Functions Declarations vs Expressions
 
 //* Function declaration
-function calcAge1(birthYeah){
-    return   2037 - birthYeah;
-}
 
-const age1 = calcAge1(2022);
-console.log(age1);
+// function calcAge1(birthYeah){
+//     return   2037 - birthYeah;
+// }
+
+// const age1 = calcAge1(2022);
+// console.log(age1);
 
 //* Function Expression
-const calcAge2 = function (birthYeah){
-    return 2037 - birthYeah;
+
+// const calcAge2 = function (birthYeah){
+//     return 2037 - birthYeah;
+// }
+
+// const age2 = calcAge2(2022);
+// console.log(age1,age2);
+
+//? Arrow Functions
+
+const calcAge3 = birthYeah => 2037 - birthYeah;
+const age3 = calcAge3(1996);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYeah,firstName) => {
+    const age = 2037 - birthYeah;
+    const retirement = 65 - age;
+    // return retirement ;
+    return `${firstName} retires in ${retirement} years`;
 }
 
-const age2 = calcAge2(2022);
-console.log(age1,age2);
+console.log(yearsUntilRetirement(1996,'Janu'));
+console.log(yearsUntilRetirement(1990,'Bob'));
+ 
