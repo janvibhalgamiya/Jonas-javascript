@@ -1,6 +1,6 @@
- 'use strict';
- 
- //? Activating Strict Mode
+"use strict";
+
+//? Activating Strict Mode
 
 // let hasDriversLicence = false;
 // const PassTest = true;
@@ -13,17 +13,16 @@
 // const private = 534;
 // const  if = 23;
 
-
 //? Functions
 
 // function logger() {
-//     console.log('My name is Janu');   
+//     console.log('My name is Janu');
 // }
 
 //calling / running /invoking function
 // logger();
 // logger();
-// logger(); 
+// logger();
 
 // function fruitProcessor(apples,oranges){
 //     console.log(apples,oranges);
@@ -39,13 +38,12 @@
 // const appleOrangeJuice = fruitProcessor(2,4);
 // console.log(appleOrangeJuice);
 
-
 //? Functions Declarations vs Expressions
 
 //* Function declaration
 
 // function calcAge1(birthYeah){
-//     return   2037 - birthYeah;
+//     return 2037 - birthYeah;
 // }
 
 // const age1 = calcAge1(2022);
@@ -75,19 +73,38 @@
 
 // console.log(yearsUntilRetirement(1996,'Janu'));
 // console.log(yearsUntilRetirement(1990,'Bob'));
- 
 
 //? Functions calling other functions
 
-function cutFruitPieces(fruit){
-    return fruit * 4;
-}
+// function cutFruitPieces(fruit){
+//     return fruit * 4;
+// }
 
-function fruitProcessor(apples,oranges){
-  const  applePieces =  cutFruitPieces(apples);
-  const  orangePieces = cutFruitPieces(oranges);
-    const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges`;
-    return juice;
-}
-console.log(fruitProcessor(2,3));
+// function fruitProcessor(apples,oranges){
+//   const  applePieces =  cutFruitPieces(apples);
+//   const  orangePieces = cutFruitPieces(oranges);
+//     const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges`;
+//     return juice;
+// }
+// console.log(fruitProcessor(2,3));
 
+//? Reviewing functions
+
+// const calcAge = function (birthYeah) {
+//   return 2037 - birthYeah;
+// };
+
+// const yearsUntilRetirement = function (birthYeah, firstName) {
+//   const age = calcAge(birthYeah);
+//   const retirement = 65 - age;
+
+//   if (retirement > 0) {
+//     // return retirement;
+//     console.log(`${firstName} retires in ${retirement} years`);
+//   } else {
+//     // return -1;
+//     console.log(`${firstName} has already retired`);
+//   }
+// };
+// console.log(yearsUntilRetirement(2006, "janu"));
+// console.log(yearsUntilRetirement(1968, "januuu"));
