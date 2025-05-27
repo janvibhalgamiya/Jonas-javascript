@@ -183,3 +183,18 @@
 
 //? Introduction to object
 
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'Teacher',
+    ['Michael','Peter','Steven']
+];
+
+const jonas = {
+    firstName : "Janvi",
+    lastName : "Prajapati",
+    age : 19,
+    job:"teacher",
+    friends : ['Rashmi', 'Roshani','Jenny']
+};
