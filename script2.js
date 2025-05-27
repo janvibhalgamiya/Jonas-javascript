@@ -148,3 +148,38 @@
 
 // const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
 // console.log(ages);
+
+
+//? Basic Array Operations (Methods)
+
+//*add element 
+// const friends = ['janvi','jenny','jack'];
+// const newLength = friends.push('kitty');//last ma add
+// console.log("🚀 ~ friends:", friends);
+// console.log("🚀 ~ newLength:", newLength);
+
+// friends.unshift('Mayuri');//first ma add
+// console.log("🚀 ~ friends:", friends);
+
+// //*remove element
+// const popped = friends.pop();//last ma remove
+// console.log("🚀 ~ friends:", friends);
+// console.log("🚀 ~ popped:", popped);
+
+// friends.shift();//first ma remove
+// console.log("🚀 ~ friends:", friends);
+// console.log("🚀 ~ friends:Index", friends.indexOf('jack'));
+// console.log("🚀 ~ friends:Index", friends.indexOf('Bob'));
+
+// friends.push(23);
+// console.log(friends.includes('peter'));
+// console.log(friends.includes('jack'));
+// console.log(friends.includes('23'));
+
+// if (friends.includes('jack')) {
+//     console.log("you have a friend called jack");
+// }
+
+
+//? Introduction to object
+
