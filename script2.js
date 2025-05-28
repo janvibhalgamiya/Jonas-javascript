@@ -244,40 +244,40 @@
 
 //? Object Methods
 
-const jonas = {
-    fistName: 'Janvi',
-    lastName: 'Prajapati',
-    birthYeah: 1991,
-    job: 'teacher',
-    friends: ['Michael','Peter','Steven'],
-    hasDriversLicence: true, 
+// const jonas = {
+//     fistName: 'Janvi',
+//     lastName: 'Prajapati',
+//     birthYeah: 1991,
+//     job: 'teacher',
+//     friends: ['Michael','Peter','Steven'],
+//     hasDriversLicence: true, 
 
     // calcAge: function(birthYeah){
     //     return 2037 - birthYeah;
     // }
 
-    calcAge: function() {
-        // console.log(this);  
-        // return 2037 - this.birthYeah;
-        this.age = 2037 - this.birthYeah;
-        return this.age;
-    },
+    // calcAge: function() {
+    //     // console.log(this);  
+    //     // return 2037 - this.birthYeah;
+    //     this.age = 2037 - this.birthYeah;
+    //     return this.age;
+    // },
 
-    getSummary: function(){
-        return `${this.fistName} is a ${this.calcAge()}-years old ${jonas.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's licence.`
-    }
-};
+//     getSummary: function(){
+//         return `${this.fistName} is a ${this.calcAge()}-years old ${jonas.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's licence.`
+//     }
+// };
 
 // const calcAge = function (birthYeah){
     //     return 2037 - birthYeah;
     // }
     
-    console.log(jonas.calcAge());
+    // console.log(jonas.calcAge());
     // console.log(jonas['calcAge'](1991));
     
-    console.log(jonas.age);
+    // console.log(jonas.age);
     
     //challenge 
     //"jonas is a 46-year old teacher,and he has a driver's licence"
     
-    console.log("🚀 ~ getSummary:", jonas.getSummary());
+    // console.log("🚀 ~ getSummary:", jonas.getSummary());
