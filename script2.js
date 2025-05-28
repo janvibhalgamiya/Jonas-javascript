@@ -134,9 +134,9 @@
 // const jonas = [firstName,'schmedmann', 2037 - 1991, 'teacher',friends];
 // console.log(jonas);
 
-//*Exercise 
+//*Exercise
 // const calcAge = function(birthYeah){
-//     return 2037 - birthYeah;    
+//     return 2037 - birthYeah;
 // }
 // const years = [1990,1967,2002,2010,2018];
 // console.log( calcAge (years)); //NaN
@@ -149,10 +149,9 @@
 // const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
 // console.log(ages);
 
-
 //? Basic Array Operations (Methods)
 
-//*add element 
+//*add element
 // const friends = ['janvi','jenny','jack'];
 // const newLength = friends.push('kitty');//last ma add
 // console.log("🚀 ~ friends:", friends);
@@ -180,7 +179,6 @@
 //     console.log("you have a friend called jack");
 // }
 
-
 //? Introduction to object
 
 // const jonasArray = [
@@ -199,8 +197,7 @@
 //     friends : ['Rashmi', 'Roshani','Jenny']
 // };
 
-
-//? Dot vs. Bracket notation 
+//? Dot vs. Bracket notation
 
 // const jonas = {
 //     firstName : 'Janvi',
@@ -220,7 +217,7 @@
 
 // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName,lastName, age,job and friends');
 //  console.log(jonas[interestedIn]); ///* answer avse job lakhvi promt ma to ""Developer""
- 
+
 // if (jonas[interestedIn]) {
 // console.log("🚀 ~ jonas:", jonas[interestedIn]);
 // }else{
@@ -231,16 +228,15 @@
 // jonas['twitter'] = '@jonasschmedtman';
 // console.log(jonas);
 
-//challenge 
+//challenge
 //"Jonas has 3 friends, and his best friend is called Michael";
 
 // jonas.friends;
 // console.log("🚀 ~ jonas.friends:", jonas.friends)
 
 // jonas.friends[0];
-// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called 
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called
 //     ${jonas.friends[0]}`);
-
 
 //? Object Methods
 
@@ -250,18 +246,18 @@
 //     birthYeah: 1991,
 //     job: 'teacher',
 //     friends: ['Michael','Peter','Steven'],
-//     hasDriversLicence: true, 
+//     hasDriversLicence: true,
 
-    // calcAge: function(birthYeah){
-    //     return 2037 - birthYeah;
-    // }
+// calcAge: function(birthYeah){
+//     return 2037 - birthYeah;
+// }
 
-    // calcAge: function() {
-    //     // console.log(this);  
-    //     // return 2037 - this.birthYeah;
-    //     this.age = 2037 - this.birthYeah;
-    //     return this.age;
-    // },
+// calcAge: function() {
+//     // console.log(this);
+//     // return 2037 - this.birthYeah;
+//     this.age = 2037 - this.birthYeah;
+//     return this.age;
+// },
 
 //     getSummary: function(){
 //         return `${this.fistName} is a ${this.calcAge()}-years old ${jonas.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's licence.`
@@ -269,15 +265,22 @@
 // };
 
 // const calcAge = function (birthYeah){
-    //     return 2037 - birthYeah;
-    // }
-    
-    // console.log(jonas.calcAge());
-    // console.log(jonas['calcAge'](1991));
-    
-    // console.log(jonas.age);
-    
-    //challenge 
-    //"jonas is a 46-year old teacher,and he has a driver's licence"
-    
-    // console.log("🚀 ~ getSummary:", jonas.getSummary());
+//     return 2037 - birthYeah;
+// }
+
+// console.log(jonas.calcAge());
+// console.log(jonas['calcAge'](1991));
+
+// console.log(jonas.age);
+
+//challenge
+//"jonas is a 46-year old teacher,and he has a driver's licence"
+
+// console.log("🚀 ~ getSummary:", jonas.getSummary());
+
+//? Iteration :- The For Loop
+
+//for loop keeps running while condition is TRUE
+// for(let rep = 1; rep <= 10; rep++){
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
