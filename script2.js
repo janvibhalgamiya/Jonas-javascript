@@ -202,21 +202,21 @@
 
 //? Dot vs. Bracket notation 
 
-const jonas = {
-    firstName : 'Janvi',
-    lastName : 'Prajapati',
-    age: 19,
-    job: 'Developer',
-    friends: ['Michael','Peter','Steven']
-};
-console.log(jonas);
+// const jonas = {
+//     firstName : 'Janvi',
+//     lastName : 'Prajapati',
+//     age: 19,
+//     job: 'Developer',
+//     friends: ['Michael','Peter','Steven']
+// };
+// console.log(jonas);
 
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
 
 // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName,lastName, age,job and friends');
 //  console.log(jonas[interestedIn]); ///* answer avse job lakhvi promt ma to ""Developer""
@@ -227,16 +227,57 @@ console.log(jonas['last' + nameKey]);
 // comsole.log("Wrong Request!Choose between firstName,lastName, age,job and friends");
 //}
 
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschmedtman';
-console.log(jonas);
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtman';
+// console.log(jonas);
 
 //challenge 
 //"Jonas has 3 friends, and his best friend is called Michael";
 
-jonas.friends;
-console.log("🚀 ~ jonas.friends:", jonas.friends)
+// jonas.friends;
+// console.log("🚀 ~ jonas.friends:", jonas.friends)
 
-jonas.friends[0];
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called 
-    ${jonas.friends[0]}`);
+// jonas.friends[0];
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called 
+//     ${jonas.friends[0]}`);
+
+
+//? Object Methods
+
+const jonas = {
+    fistName: 'Janvi',
+    lastName: 'Prajapati',
+    birthYeah: 1991,
+    job: 'teacher',
+    friends: ['Michael','Peter','Steven'],
+    hasDriversLicence: true, 
+
+    // calcAge: function(birthYeah){
+    //     return 2037 - birthYeah;
+    // }
+
+    calcAge: function() {
+        // console.log(this);  
+        // return 2037 - this.birthYeah;
+        this.age = 2037 - this.birthYeah;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.fistName} is a ${this.calcAge()}-years old ${jonas.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's licence.`
+    }
+};
+
+// const calcAge = function (birthYeah){
+    //     return 2037 - birthYeah;
+    // }
+    
+    console.log(jonas.calcAge());
+    // console.log(jonas['calcAge'](1991));
+    
+    console.log(jonas.age);
+    
+    //challenge 
+    //"jonas is a 46-year old teacher,and he has a driver's licence"
+    
+    console.log("🚀 ~ getSummary:", jonas.getSummary());
