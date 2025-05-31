@@ -216,7 +216,7 @@
 // console.log(jonas['last' + nameKey]);
 
 // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName,lastName, age,job and friends');
-//  console.log(jonas[interestedIn]); ///* answer avse job lakhvi promt ma to ""Developer""
+//  console.log(jonas[interestedIn]); ///* answer avse job lakhvi promt ma to ""Developer"
 
 // if (jonas[interestedIn]) {
 // console.log("🚀 ~ jonas:", jonas[interestedIn]);
