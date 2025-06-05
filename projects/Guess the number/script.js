@@ -97,4 +97,3 @@ document.querySelector('.again').addEventListener('click',
 // 4. Also restore the original background color (#222) and number width (15rem)
 
 // GOOD LUCK �
-
