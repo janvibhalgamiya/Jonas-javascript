@@ -115,3 +115,4 @@ btnNew.addEventListener("click",init
   //   player1El.classList.remove("player--active");
 //}
 );
+
