@@ -50,47 +50,90 @@
 //? Variable Environment Hoisting and The TDZ
 
 //Variable 
-console.log("🚀 ~ me:", me);
+// console.log("🚀 ~ me:", me);
 // console.log("🚀 ~ job:", job);
 // console.log("🚀 ~ year:", year);
 
-var me = 'janu';
-let job = 'teacher';
-const year = 1991;
+// var me = 'janu';
+// let job = 'teacher';
+// const year = 1991;
 
 //Functions
 
-console.log("🚀 ~ addDecl ~ addDecl:", addDecl(2,3));
+// console.log("🚀 ~ addDecl ~ addDecl:", addDecl(2,3));
 // console.log("🚀 ~ addExpr ~ addExpr:", addExpr(2,3));
 // console.log("🚀 ~ addArrow:", addArrow(2,3));
-console.log("🚀 ~ addArrow:", addArrow);
+// console.log("🚀 ~ addArrow:", addArrow);
 
 
-function addDecl(a,b){
-    return a + b;
-}
+// function addDecl(a,b){
+//     return a + b;
+// }
 
-const addExpr = function(a,b){
-    return  a + b;
-};
+// const addExpr = function(a,b){
+//     return  a + b;
+// };
 
-var addArrow = (a,b) => a + b;
+// var addArrow = (a,b) => a + b;
 
 
 //? Example 
 
-if (!numProducts) deleteShoppingCard();
+// if (!numProducts) deleteShoppingCard();
 
-var numProducts = 10;
+// var numProducts = 10;
 
-function deleteShoppingCard(){
-    console.log('All products deleted!');
-}
+// function deleteShoppingCard(){
+//     console.log('All products deleted!');
+// }
 
-var x = 1;
-let y = 2;
-const z = 3;
+// var x = 1;
+// let y = 2;
+// const z = 3;
 
 // console.log(x === window.x);
 // console.log(y === window.y);
 // console.log(z === window.z);
+
+
+//? The This Keyword
+
+// console.log(this);
+ 
+const calcAge = function(birthYear){
+    console.log(2037 - birthYear);
+    // console.log(this);
+}
+calcAge(1991);
+
+
+const calcAgeArrow = birthYear => {
+    console.log(2037 - birthYear);
+    // console.log(this);
+}
+calcAgeArrow(1980);
+
+
+const jonas = {
+    year : 1991,
+    calcAge : function(){
+        // console.log(this);
+        // console.log(2037 - this.year);
+    },
+}
+jonas.calcAge();
+
+
+const matilda = {
+    year : 2017,
+};
+matilda.calcAge = jonas.calcAge;
+
+console.log(matilda);
+console.log(jonas);
+
+matilda.calcAge();
+
+const f = jonas.calcAge;
+f();
+console.log("🚀 ~ f:", f);
