@@ -204,3 +204,42 @@
 
 //? primitive types 
 // number,string,boolean,undefined,null,symbol,bigInt
+
+
+//? Primitives vs Objects Practice
+
+//* Primitive Types
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log("🚀 ~ lastName:", lastName);
+console.log("🚀 ~ oldLastName:", oldLastName);
+
+const jessica = {
+    firstName : 'Jessica',
+    lastName : 'Williams',
+    age : 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log("🚀 ~ jessica:", jessica);
+console.log("🚀 ~ marriedJessica:", marriedJessica);
+
+// marriedJessica = {};
+
+//* Copying Objects
+
+const jessica2 = {
+    firstName : 'Jessica',
+    lastName : 'Williams',
+    age : 27,
+    family: ['Alice','Bob'],
+};
+
+const jessicaCopy = Object.assign({},jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Marry');
+jessicaCopy.family.push('John');
+console.log("🚀 ~ jessica2:", jessica2);
+console.log("🚀 ~ jessicaCopy:", jessicaCopy);
