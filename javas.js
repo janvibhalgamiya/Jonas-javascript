@@ -132,55 +132,75 @@
 
 //? Regular Functions vs Arrow Functions
 
-var firstName = "Matilda";
+// var firstName = "Matilda";
 
-const jonas = {
-  firstName: "janu",
-  year: 1991,
-  calcAge: function () {
-    // console.log(this);
-    console.log(2037 - this.year);
+// const jonas = {
+//   firstName: "janu",
+//   year: 1991,
+//   calcAge: function () {
+//     // console.log(this);
+//     console.log(2037 - this.year);
 
-    //? Solution 1
-    // const self = this; // self or that
-    // const isMillenial = function () {
-    //   console.log(self);
-    //   console.log(self.year >= 1981 && self.year <= 1996);
-    // //* console.log(this.year >= 1981 && this.year <= 1996);
-    // };
+//     //? Solution 1
+// const self = this; // self or that
+// const isMillenial = function () {
+//   console.log(self);
+//   console.log(self.year >= 1981 && self.year <= 1996);
+// //* console.log(this.year >= 1981 && this.year <= 1996);
+// };
 
-    //? Solution 2
-    const isMillenial = () => {
-        console.log(this);
-        console.log(this.year >= 1981 && this.year <= 1996);
-    }
-    
-    isMillenial();
-  },
+//     //? Solution 2
+//     const isMillenial = () => {
+//         console.log(this);
+//         console.log(this.year >= 1981 && this.year <= 1996);
+//     }
 
-  greet: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
-};
+//     isMillenial();
+//   },
 
-jonas.greet();
-jonas.calcAge();
+//   greet: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
 
+// jonas.greet();
+// jonas.calcAge();
 
 //? Only available in regular function
 //? Argument Keywords
 
-const addExpr = function (a,b){
-    console.log(arguments);
-    
-    return a + b;
-};
-addExpr(2,6);
-addExpr(2,6,8,12);
+// const addExpr = function (a,b){
+//     console.log(arguments);
 
-var addArrow = (a,b) => {
-    console.log(arguments);
-    return a + b;
-};
-addArrow(2,5,8);
+//     return a + b;
+// };
+// addExpr(2,6);
+// addExpr(2,6,8,12);
+
+// var addArrow = (a,b) => {
+//     console.log(arguments);
+//     return a + b;
+// };
+// addArrow(2,5,8);
+
+
+//? Primitives vs Objects (Primitive vs Reference Types)
+
+// let age = 30;
+// let oldAge = age;
+// age = 31;
+// console.log("🚀 ~ age:", age);
+// console.log("🚀 ~ oldAge:", oldAge);
+
+// const me = {
+//     name : 'Janu',
+//     age : 30,
+// };
+// const friend = me;
+// friend.age = 27;
+// console.log("🚀 ~ friend:", friend);
+// console.log("🚀 ~ me:", me);
+
+//? primitive types 
+// number,string,boolean,undefined,null,symbol,bigInt
